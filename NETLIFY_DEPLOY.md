@@ -15,7 +15,7 @@ I'm using `yarn` which you can install using npm `npm install --global yarn`.  T
 You can use `npm`.  The NPM build command is `npm install`.
 
 
-You can deploy async functions to netlify.  There are many options available for doing this.  We'll use the [Netlify CLI](https://docs.netlify.com/cli/get-started/).
+You can deploy async functions to netlify.  There are many options available for doing this.  We'll use the [Netlify CLI](https://docs.netlify.com/cli/get-started/).  Here is list of Netlify CLI commands for reference: [commands](https://cli.netlify.com/).
 
 If you fork this repository or copy the functions in the `/functions` directory to your own repository, you can deploy them to Netlify by including a `netlify.toml` file in your root with the following information for building and specifying where to find the functions directory.
 
@@ -84,7 +84,8 @@ You can push your environment variables out to netlify from the CLI.
 
 `netlify env:import .env` 
 
-After you update environment variables you need to trigger a build for them to take affect.
+After you update environment variables you need to trigger a build for them to take affect.  Pushing to GitHub will do this. 
+You can also use this CLI command: `netlify deploy --trigger`
 
 
 
@@ -97,12 +98,14 @@ From the root, run `node use-cases/upload-video-eager.js`
 ## Test Moderation Functions
 
 
+
 ## Trouble Shoot
 
 You can view logs most easily on the netlify website. Open the website. 
 
 `netlify open` 
 
-Then navigate to 
+Then navigate to functions and choose the function you're interested it to see its logs.
+
 
 
