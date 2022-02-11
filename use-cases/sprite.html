@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprite</title>
+    <style>
+      .icons-email,
+      .icons-github,
+      .icons-home {
+          display: inline-block;
+        background: url('//res.cloudinary.com/pictures77/image/sprite/v1644363001/iconduck.png')
+          no-repeat;
+      }
+
+      .icons-email {
+        background-position: 0px 0px;
+        width: 96px;
+        height: 76px;
+      }
+
+      .icons-github {
+        background-position: 0px -78px;
+        width: 96px;
+        height: 93px;
+      }
+
+      .icons-home {
+        background-position: 0px -173px;
+        width: 96px;
+        height: 96px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="https://www.cloudinary.com" target="_blank"><span class="icons-home"></span></a>
+    <a href="mailto:support@cloudinary.com" target="_blank"><span class="icons-email"></span></a>
+    <a href="https://www.github.com/cloudinary-training" target="_blank"><span class="icons-github"></span></a>
+  </body>
+</html>
