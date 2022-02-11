@@ -65,37 +65,3 @@ const updateResponse = await cloudinary.api.update(video.public_id, {
 
 We'll use the Upload API destroy method to remove any videos in the rejected queue. We get the list of videos in the rejected queue and then we iterate through it deleting all rejected videos found in queue.
 
-## Deploying Webhook functions to Netlify
-
-Install node/npm on Mac with Homebrew
-
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/
-Homebrew/install/master/install)"
-brew update
-brew install node
-```
-
-
-I'm using `yarn` which you can install using npm `npm install --global yarn`.  The yarn build command is `yarn build`.
-
-You can use `npm`.  The NPM build command is `npm run build`.
-
-You can deploy async functions to netlify.  There are many options available for doing this.
-
-If you fork this repository or copy the functions in the `/functions` directory to your own repository, you can deploy them to Netlify by including a `netlify.toml` file in your root with the following information for building and specifying where to find the functions directory.
-
-```toml
-[build]
-  command = "yarn build"
-  functions = "functions/"
-```
-
-Push your repository to GitHub (or GitLab or Bitbucket).
-Set up a free account in Netlify.
-Create a new site and indicate you want to `Import an existing template` and locate your repository with permission to deploy.
-
-### Setup Environment Variables in Netlify 
-
-
-
