@@ -87,18 +87,11 @@ You can push your environment variables out to netlify from the CLI.
 After you update environment variables you need to trigger a build for them to take affect.  Pushing to GitHub will do this. 
 You can also use this CLI command: `netlify deploy --trigger`
 
-
-
 ## Test Email Notify Function
 
 Modify the `use-cases/upload-video-eager.js` to use the full path to the notify email function for the webhook.  It will be something like `https://webhook.netlify.app/.netlify/functions/webhook_notify_email`
 
 From the root, run `node use-cases/upload-video-eager.js`
-
-## Test Moderation Functions
-
-
-
 ## Trouble Shoot
 
 You can view logs most easily on the netlify website. Open the website. 
