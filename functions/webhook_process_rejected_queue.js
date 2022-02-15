@@ -73,14 +73,14 @@ exports.handler = async function (event, context) {
     }
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "rejected Q processed" }),
+      body: JSON.stringify({ message: "rejected Queue processed" }),
     };
   } catch (error) {
     console.error('error', JSON.stringify(error, 0, 2));
 
     return {
       statusCode: 500,
-      body: JSON.stringify({error: "error processing rejected Q"}),
+      body: JSON.stringify({error: "error processing rejected Queue"}),
     };
   }
 };

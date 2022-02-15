@@ -24,8 +24,8 @@ exports.handler = async function (event, context) {
   }
 
   // setup functions to process Google moderation Qs
-  const approvedFn = `${process.env.PROD_FN_PATH}webhook_clear_google_moderation_approved_queue`;
-  const rejectedFn = `${process.env.PROD_FN_PATH}webhook_clear_google_moderation_rejected_queue`;
+  const approvedFn = `${process.env.PROD_FN_PATH}webhook_process_approved_queue`;
+  const rejectedFn = `${process.env.PROD_FN_PATH}webhook_process_rejected_queue`;
   console.log(approvedFn);
   console.log(rejectedFn);
 
