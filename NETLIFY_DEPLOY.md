@@ -59,12 +59,14 @@ PROD_FN_PATH="https://<project name>.netlify.app/.netlify/functions/"
 `yarn dev` to start servers locally
 `yarn test` to run invoke the lambda functions locally for testing
 
-- [ ] Install netlify cli  
-`npm install netlify-cli`  
+- [ ] Install netlify cli globally  
+`npm install netlify-cli -g`  
 
 - [ ] Login to netlify
 `netlify login`  
 This will drop some authorization information in ~/Library/Preferences/netlify/config.json
+
+- [ ] ADD TO GITHUB
 
 If you need to login to a different account, log out first. 
 `netlify logout`  
